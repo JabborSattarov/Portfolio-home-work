@@ -1,0 +1,36 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background: #EDF3F8;
+    font-family:sans-serif ;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .content__a{
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #33323D ;
+    color: #33323D ;
+    font-weight: 700;
+}

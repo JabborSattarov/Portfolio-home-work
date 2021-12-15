@@ -1,0 +1,184 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar__toggle{
+            position: relative;
+            width: 30px;
+            height: 2px;
+            background: #000;
+            display:none;
+            &:active{
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background: #000;
+                    position:absolute;
+                    top: -10px;
+                    left: 0;
+                    
+                }
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background: #000;
+                    position:absolute;
+                    top: 10px;
+                    left: 0;
+                    
+                }
+            }
+            &::after {
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: #000;
+                position:absolute;
+                top: -10px;
+                right: 0;
+            }
+            &::before {
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: #000;
+                position:absolute;
+                top: 10px;
+                right: 0;
+            }
+        }
+        .navbar__ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .ul__li{
+                list-style: none;
+                padding: 10px;
+                &__a{
+                    text-decoration: none;
+                    color: #33323D ;
+                    display: flex;
+                    font-family: sans-serif;
+                    font-weight:700;
+                    transition: all .3s step-end;
+                    &:hover{
+                        color:  darkblue;
+                    }
+                    &:active{
+                        color: lightblue;
+                    }
+                }
+            }
+        }
+    }
+}
+// for tablet devices
+@media (max-width:978px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        &__navbar{
+           
+            .navbar__toggle{
+                position: relative;
+                width: 30px;
+                height: 2px;
+                background: #000;
+                display:none;
+                &:active{
+                    &::after {
+                        content: "";
+                        width: 20px;
+                        height: 2px;
+                        background: #000;
+                        position:absolute;
+                        top: -10px;
+                        left: 0;
+                        
+                    }
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        height: 2px;
+                        background: #000;
+                        position:absolute;
+                        top: 10px;
+                        left: 0;
+                        
+                    }
+                }
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background: #000;
+                    position:absolute;
+                    top: -10px;
+                    right: 0;
+                }
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background: #000;
+                    position:absolute;
+                    top: 10px;
+                    right: 0;
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+}
+// for mobile deviseces
+@media (max-width:768px) {
+    .header{
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__navbar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navbar__toggle{
+                display: flex;
+            }
+            .navbar__ul{
+                display: none;
+                align-items: center;
+                justify-content: center;
+                .ul__li{
+                    list-style: none;
+                    padding: 10px;
+                    &__a{
+                        text-decoration: none;
+                        color: #33323D ;
+                        display: flex;
+                        font-family: sans-serif;
+                        font-weight:700;
+                        &:hover{
+                            color:  darkblue;
+                        }
+                        &:active{
+                            color: crimson;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
